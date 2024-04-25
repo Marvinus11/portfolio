@@ -3,7 +3,12 @@ import icon from 'astro-icon';
 
 // https://astro.build/config
 export default defineConfig({
-    integrations: [icon()],
     site: 'https://Marvinus11.github.io',
-    base: 'portfolio'
+    base: '/portfolio',
+    server: {
+        port: 3000,
+        host: true
+    },
+    integrations: [icon()]
+
 });

@@ -8,4 +8,6 @@ export default defineConfig({
         host: true
     },
     integrations: [icon()],
+    site: 'https://Marvinus11.github.io',
+    base: 'portfolio'
 });

@@ -7,11 +7,22 @@ import { Icon } from "astro-icon/components";
     <img src="/logo.svg" />
   </a>
   <div class="txt-container">
-    <Icon name="gmail" />
-    <Icon name="linkedin" />
-    <Icon name="github" />
+    <a href="mailto:viniciusmartins01112@gmail.com" >
+      <Icon name="gmail" />
+    </a>
+
+    <a href="https://www.linkedin.com/in/vinicius-martins-947269201">
+      <Icon
+        name="linkedin"
+      />
+    </a>
+
+    <a href="https://www.github.com/Marvinus11" >
+      <Icon name="github"/>
+    </a>
   </div>
 </header>
+
 <style>
   header {
     display: flex;
@@ -35,7 +46,12 @@ import { Icon } from "astro-icon/components";
     font-size: 1.5em;
   }
 
-  [data-icon]:hover, [data-icon]:focus {
+  [data-icon] {
+    color: var(--grey);
+  }
+
+  [data-icon]:hover,
+  [data-icon]:focus {
     color: var(--white);
     scale: 1.2;
   }

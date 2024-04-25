@@ -10,9 +10,14 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.5.9"
+    "astro": "^4.6.3",
+    "astro-icon": "^1.1.0"
   },
   "devDependencies": {
     "postcss-scss": "^4.0.9"
-  }
+  },
+  "description": "```sh\r npm create astro@latest -- --template basics\r ```",
+  "main": "index.js",
+  "author": "Vinícius",
+  "license": "ISC"
 }

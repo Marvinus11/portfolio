@@ -1,68 +1,43 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
 <header>
-  <a class="image-content" href="/">
-    <img src="/logo_purple.svg" />
+  <a class="img-container" href="/">
+    <img src="/logo.svg" />
   </a>
-  <div class="text-content">
-    <div></div>
-    <h4>Início</h4>
-    <h4>Projetos</h4>
-    <h4>Contatos</h4>
+  <div class="txt-container">
+    <Icon name="gmail" />
+    <Icon name="linkedin" />
+    <Icon name="github" />
   </div>
 </header>
 <style>
   header {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
-    align-items: center;
-    color: var(--text-color);
-    padding: 0 3em;
+    padding: 1.5em;
   }
 
-  .text-content {
-    height: 5em;
+  .img-container {
+    width: 100%;
+  }
+
+  img:hover {
+    scale: 1.2;
+  }
+
+  .txt-container {
     display: flex;
-    flex-direction: row;
+    color: var(--grey);
     gap: 1em;
-    align-items: center;
+    font-size: 1.5em;
   }
 
-  .image-content {
-    width: 5em;
-    height: 5em;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+  [data-icon]:hover, [data-icon]:focus {
+    color: var(--white);
+    scale: 1.2;
   }
 
-  img {
-    width: 2.5em;
-  }
-
-  h4:hover, h4:focus {
-    transform: scale(1.2);
-    color: var(--text-hover);
-  }
-  img:hover, img:focus {
-    transform: scale(1.2);
-  }
-
-  @media (max-width: 37.5rem) {
-    header {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0 2em;
-      font-size: 0.75em;
-    }
-
-    img {
-      width: 2rem;
-    }
-
-    img:hover, img:focus {
-    transform: scale(1.2);
-  }
-  }
 </style>

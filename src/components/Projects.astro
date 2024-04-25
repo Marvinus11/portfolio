@@ -1,0 +1,61 @@
+<div class="container">
+  <h5>Projetos</h5>
+  <div class="grid">
+    <div class="card">
+      <p>EM BREVE</p>
+    </div>
+    <div class="card">
+      <p>EM BREVE</p>
+    </div>
+    <div class="card">
+      <p>EM BREVE</p>
+    </div>
+    <div class="card">
+      <p>EM BREVE</p>
+    </div>
+    <div class="card">
+      <p>EM BREVE</p>
+    </div>
+    <div class="card">
+      <p>EM BREVE</p>
+    </div>
+  </div>
+</div>
+<style>
+  :root {
+    --bg-card: #323030;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em; 
+  }
+
+  h5 {
+    color: var(--grey);
+    font-size: 1em;
+  }
+
+  .grid {
+    display: grid;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    place-items: center;
+    grid-gap: 3em;
+  }
+
+  .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
+    padding: 1em;
+    border-radius: 0.5em;
+    background-color: var(--bg-card);
+  }
+
+  p {
+    color: var(--grey);
+  }
+</style>

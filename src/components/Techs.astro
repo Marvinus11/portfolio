@@ -1,0 +1,60 @@
+---
+import { Icon } from "astro-icon/components";
+---
+
+<div class="container">
+  <h5>Techs</h5>
+  <div class="techs">
+    <div class="icon">
+      <Icon name="react" />
+    </div>
+    <div class="icon">
+      <Icon name="node" />
+    </div>
+    <div class="icon">
+      <Icon name="js" />
+    </div>
+    <div class="icon">
+      <Icon name="bd" />
+    </div>
+    <div class="icon">
+      <Icon name="git" />
+    </div>
+    <div class="icon">
+      <Icon name="bootstrap" />
+    </div>
+    <div class="icon">
+      <Icon name="html" />
+    </div>
+    <div class="icon">
+      <Icon name="css" />
+    </div>
+  </div>
+</div>
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+  }
+
+  h5 {
+    color: var(--grey);
+    font-size: 1em;
+  }
+
+  .techs {
+    display: flex;
+    width: 100%;
+    max-width: 425px;
+    flex-direction: row;
+    justify-content: baseline;
+    align-items: center;
+    gap: 1em;
+  }
+
+  [data-icon] {
+    width: 100%;
+    font-size: 1.5em;
+  }
+</style>

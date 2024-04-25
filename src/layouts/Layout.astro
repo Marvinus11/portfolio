@@ -24,17 +24,20 @@
   </head>
 
   <body>
-    <slot />
+    <div class="container">
+      <slot />
+    </div>
   </body>
 </html>
 <style is:global>
   :root {
         --primary: #ac04d4;
         --secundary: #0829ff;
-        --bg-color: #13151a;
-        --text-color: #7e7a7a;
-        --text-hover: #ffffff;
+        --bg-color: #030303;
+        --grey: #7e7a7a;
+        --white: #ffffff;
     }
+
   html {
     background: var(--bg-color);
     font-family: "Oswald", sans-serif;
@@ -44,7 +47,14 @@
   }
 
   body {
+    display: flex;
     height: 100vh;
     width: 100vw;
+    justify-content: center;
+  }
+
+  .container {
+    width: 100vw;
+    max-width: 1024px;
   }
 </style>

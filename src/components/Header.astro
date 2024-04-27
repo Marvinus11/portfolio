@@ -3,8 +3,8 @@ import { Icon } from "astro-icon/components";
 ---
 
 <header>
-  <a class="img-container" href="/">
-    <img src="/logo.svg" />
+  <a class="img-container" href="/portfolio">
+    <Icon name="logo"/>
   </a>
   <div class="txt-container">
     <a href="mailto:viniciusmartins01112@gmail.com" >
@@ -41,9 +41,10 @@ import { Icon } from "astro-icon/components";
 
   .txt-container {
     display: flex;
-    color: var(--grey);
     gap: 1em;
+    color: var(--grey);
     font-size: 1.5em;
+    margin-left: 7.5em;
   }
 
   [data-icon] {
@@ -54,6 +55,10 @@ import { Icon } from "astro-icon/components";
   [data-icon]:focus {
     color: var(--white);
     scale: 1.2;
+  }
+
+  [data-icon = "logo"] {
+  font-size: 1.5em;
   }
 
 </style>

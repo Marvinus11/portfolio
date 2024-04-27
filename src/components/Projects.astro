@@ -29,7 +29,7 @@
   .container {
     display: flex;
     flex-direction: column;
-    padding: 1.5em; 
+    padding: 1.5em;
   }
 
   h5 {
@@ -41,18 +41,28 @@
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
     place-items: center;
-    grid-gap: 3em;
+    width: 90%;
+    gap: 1em;
   }
 
   .card {
     display: flex;
+    width: 95%;
+    max-width: 200px;
+    height: 100px;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    height: 90%;
-    padding: 1em;
     border-radius: 0.5em;
     background-color: var(--bg-card);
+  }
+
+  .card:hover {
+    scale: 1.1;
+    border: 2px white solid;
+  }
+
+  .card:hover>p {
+    color: var(--white);
   }
 
   p {

@@ -14,6 +14,7 @@
     "astro-icon": "^1.1.0"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.29",
     "postcss-scss": "^4.0.9"
   },
   "description": "```sh\r npm create astro@latest -- --template basics\r ```",

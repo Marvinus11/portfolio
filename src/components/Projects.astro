@@ -27,7 +27,6 @@
   }
 
   .container {
-    display: contents;
     padding: 1.5em;
   }
 
@@ -40,15 +39,15 @@
     display: grid;
     grid-template: 1fr 1fr / 1fr 1fr;
     place-items: center;
-    width: 90%;
+    width: 100%;
     gap: 1em;
   }
 
   .card {
     display: flex;
-    width: 95%;
-    max-width: 200px;
-    height: 100px;
+    width: 100%;
+    max-width: 180px;
+    height: 7rem;
     justify-content: center;
     align-items: center;
     border-radius: 0.5em;
@@ -60,7 +59,7 @@
     border: 2px white solid;
   }
 
-  .card:hover>p {
+  .card:hover > p {
     color: var(--white);
   }
 

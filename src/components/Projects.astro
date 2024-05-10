@@ -37,7 +37,7 @@
 
   .grid {
     display: grid;
-    grid-template: 1fr 1fr / 1fr 1fr;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr;
     place-items: center;
     width: 100%;
     gap: 1em;
@@ -65,5 +65,29 @@
 
   p {
     color: var(--grey);
+  }
+
+  @media screen and (min-width: 426px) {
+    h5 {
+    color: var(--grey);
+    font-size: 1.2em;
+  }
+
+  .grid {
+    display: grid;
+    grid-template: 49% 49% / 33% 33% 33%;
+    place-items: center;
+    width: 100%;
+  }
+
+  .card {
+    display: flex;
+    width: 95%;
+    height: 10em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5em;
+    background-color: var(--bg-card);
+  }
   }
 </style>

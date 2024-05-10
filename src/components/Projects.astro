@@ -1,23 +1,25 @@
 <div class="container">
   <h5>Projetos</h5>
-  <div class="grid">
-    <div class="card">
-      <p>EM BREVE</p>
-    </div>
-    <div class="card">
-      <p>EM BREVE</p>
-    </div>
-    <div class="card">
-      <p>EM BREVE</p>
-    </div>
-    <div class="card">
-      <p>EM BREVE</p>
-    </div>
-    <div class="card">
-      <p>EM BREVE</p>
-    </div>
-    <div class="card">
-      <p>EM BREVE</p>
+  <div class="container_flex">
+    <div class="grid">
+      <div class="card">
+        <p>EM BREVE</p>
+      </div>
+      <div class="card">
+        <p>EM BREVE</p>
+      </div>
+      <div class="card">
+        <p>EM BREVE</p>
+      </div>
+      <div class="card">
+        <p>EM BREVE</p>
+      </div>
+      <div class="card">
+        <p>EM BREVE</p>
+      </div>
+      <div class="card">
+        <p>EM BREVE</p>
+      </div>
     </div>
   </div>
 </div>
@@ -69,25 +71,32 @@
 
   @media screen and (min-width: 426px) {
     h5 {
-    color: var(--grey);
-    font-size: 1.2em;
-  }
+      color: var(--grey);
+      font-size: 1.2em;
+    }
 
-  .grid {
-    display: grid;
-    grid-template: 49% 49% / 33% 33% 33%;
-    place-items: center;
-    width: 100%;
-  }
+    .container_flex {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-  .card {
-    display: flex;
-    width: 95%;
-    height: 10em;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.5em;
-    background-color: var(--bg-card);
-  }
+    .grid {
+      display: grid;
+      grid-template: 49% 49% / 33% 33% 33%;
+      place-items: center;
+      width: 100%;
+      max-width: 556px;
+    }
+
+    .card {
+      display: flex;
+      width: 99%;
+      height: 10em;
+      justify-content: center;
+      align-items: center;
+      border-radius: 0.5em;
+      background-color: var(--bg-card);
+    }
   }
 </style>

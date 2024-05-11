@@ -45,6 +45,9 @@
     gap: 1em;
   }
 
+  .grid:hover > :not(:hover) {
+      opacity: 0.4;
+    }
   .card {
     display: flex;
     width: 100%;
@@ -54,11 +57,6 @@
     align-items: center;
     border-radius: 0.5em;
     background-color: var(--bg-card);
-  }
-
-  .card:hover {
-    scale: 1.1;
-    border: 2px white solid;
   }
 
   .card:hover > p {
@@ -97,6 +95,6 @@
       align-items: center;
       border-radius: 0.5em;
       background-color: var(--bg-card);
-    }
+    } 
   }
 </style>
